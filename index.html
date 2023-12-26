@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="index.html" class="header__logo">Guess the number</a>
+        </div>
+      </header>
+      <main class="page">
+        <section class="main">
+          <div class="main__container">
+            <div class="main__wrapper">
+              <div class="main__top">
+                <button class="main__setting">
+                  <img src="./public/images/setting.svg" alt="setting" />
+                </button>
+                <button class="main__restart">
+                  <img src="./public/images/restart.svg" alt="restart" />
+                </button>
+              </div>
+              <div class="main__body">
+                <h2 class="main__rage">Диапазон чисел от 1 до 100</h2>
+                <form class="main__form">
+                  <input type="number" class="main__input" placeholder="введите число" />
+                  <p class="main__hint">Загадонное число четное</p>
+                  <button class="main__button">Отгадать</button>
+                </form>
+                <p class="main__text"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="setting">
+          <button class="setting__exit"><img src="./public/images/exit.svg" alt="exit" /></button>
+          <h4 class="setting__title">Настройки</h4>
+          <form class="setting__form">
+            <label class="setting__label">
+              <p>Минимальное число</p>
+              <input type="number" name="min" class="setting__input" id="min" value="1" />
+            </label>
+            <label class="setting__label">
+              <p>Максимальное число</p>
+              <input type="number" name="max" class="setting__input" id="max" value="100" />
+            </label>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
